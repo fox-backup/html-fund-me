@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href=".">
+    <title>Fund Me App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the FundMe app for FOXR!</h1>
+        <div>Interact with the fundMe contract with the buttons below.</div>
+        <div class="button-container">
+            <button class="contract-buttons" id="connectButton">Connect</button>
+            <button class="contract-buttons" id="getBalanceButton">Contract Balance</button>
+            <button class="contract-buttons" id="withdrawButton">Withdraw</button>
+            <div class="input-label">
+                <label for="eth-amount">Ethereum to fund:</label>
+                <input type="text" placeholder="Input amount in Ethereum" id="eth-amount" name="eth-amount" class="eth-amount">
+            </div>
+            <button id="fundButton" class="contract-buttons">Fund</button>
+        </div>
+        
+        <p>Verify contract on <a href="">Etherscan</a></p>
+
+    </div>
+
+    <footer>Made by <a href="https://wwwfoxr.xyz">FOXR.</a></footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
