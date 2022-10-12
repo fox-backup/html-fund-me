@@ -91,6 +91,9 @@ async function getBalance() {
             const balance = await provider.getBalance(contractAddress);
             console.log(ethers.utils.formatEther(balance));
             getBalanceButton.style.backgroundColor = "green";
+            getBalanceButton.innerHTML = `Contract Balance: ${ethers.utils.formatEther(
+                balance
+            )} Goerli ETH`;
         } catch (error) {
             console.error(error);
         }
